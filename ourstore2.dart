@@ -35,7 +35,6 @@ void main() {
         print('Enter Fuitt Nmae :');
         fruitname = stdin.readLineSync()!;
         print('$fruitname is Remved From the Store');
-
         break;
       // Exit From the Store
       case '5':
