@@ -6,7 +6,7 @@ void main() {
   do {
     print('**** WELCOME TO JIOMART ****');
     print(
-        '\n\n 1.Add Fruits \n 2.Check Avalability \n3.Display Fruits \n 4.Remove Fruits \n5.Exit');
+        '\n\n 1.Add Fruits\n2.Check Avalability\n3.Display Fruits\n 4.Remove Fruits\n5.Exit');
     print('Enter your Choice :');
     userChoice = stdin.readLineSync()!;
     var fruitname;
@@ -14,12 +14,14 @@ void main() {
       // Adding the Fruits into the Store
       case '1':
         print('Enter Fruit Name :');
+        fruitname = stdin.readLineSync()!;
         store.add(fruitname);
         print('$fruitname is added into the Store');
         break;
       // check the fruit is available or not
       case '2':
         print('Enter Fruit Name :');
+        fruitname = stdin.readLineSync()!;
         if (store.contains(fruitname)) {
           print('$fruitname is available');
         } else {
@@ -32,7 +34,7 @@ void main() {
         break;
       // Remove the Fruits from the Store
       case '4':
-        print('Enter Fuitt Nmae :');
+        print('Enter Fruit Name :');
         fruitname = stdin.readLineSync()!;
         print('$fruitname is Remved From the Store');
         break;
