@@ -13,10 +13,11 @@ void main() {
   // number2String = stdin.readLineSync()!;
   // number2 = int.parse(number2String);
 
-// To print the Square root
-
-  ans = number1 * number1;
-  print('Answer is $ans');
+// To print the Square root 
+  
+  ans = number1 *number1;
+   print('Answer is $ans');
   ansString = stdin.readLineSync()!;
   ans = int.parse(ansString);
+  
 }
