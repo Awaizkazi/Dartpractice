@@ -1,5 +1,5 @@
 import 'dart:io';
-
+//! LOGIC BUILDING PRACTICE
 void main() {
   /*   Q1)
 Use the 3 varibales declare to print out the following to the console
