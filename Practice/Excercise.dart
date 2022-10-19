@@ -1,5 +1,5 @@
 import 'dart:io';
-//! LOGIC BUILDING PRACTICE
+
 void main() {
   /*   Q1)
 Use the 3 varibales declare to print out the following to the console
@@ -65,8 +65,8 @@ and write a program that prints out all the elements of the list that are less t
   /*Excercise 3
 Create a program that asks the user for a number and then prints out a list of all the divisors of that number.
   */
-  stdout.write('Please Enter a number : ');
-  int number = int.parse(stdin.readLineSync()!);
+  // stdout.write('Please Enter a number : ');
+  // int number = int.parse(stdin.readLineSync()!);
 // Wha tk ke number print karega jo divisible by that number honge Divide by 2 that number tk print honge
   /*Please Enter a number : 100
 1
@@ -78,9 +78,115 @@ Create a program that asks the user for a number and then prints out a list of a
 25
 50
 100  */
-  for (var i = 1; i <= number; i++) {
-    if (number % i == 0) {
-      print(i);
+  // for (var i = 1; i <= number; i++) {
+  //   if (number % i == 0) {
+  //     print(i);
+  //   }
+  // }
+
+/*EXCERCISE 5
+ Take 2 list, for example  
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+and write a program that returns a list that contains only the elements that are common between them (without duplicates). Make sure your program works on two lists of different sizes.  
+*/
+  // List a = [1, 1, 2, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+  // List b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 89, 92];
+  // Set<int> c = {};
+  // for (var i in a) {
+  //   for (var j in b) {
+  //     if (i == j) {
+  //       c.add(i);
+  //     }
+  //   }
+  // }
+  // print(c.toList());
+/*Exercise 6
+Ask the user for a string and print out whether this string is a palindrome or not.
+  */
+  // using the built in Functions
+  // stdout.write('Please give a word ? ');
+  // String input = stdin.readLineSync()!;
+  // //Logic string ko split means alag alag karenge , reversed karenge, Join karenge
+  // String reverseInput = input.split('').reversed.join('');
+  // // Checking wheer entered number is palindrome or not
+  // input == reverseInput
+  //     ? print('Entered word is a palindrome')
+  //     : print('Entered word is not a palindrome');
+
+  
+// Palindrome(String input){
+//   // stdout.write('Please give a word ? ');
+//   // String input = stdin.readLineSync()!;
+
+//   int left = 0;
+//   int right = input.length - 1;
+//   while (left < right) {
+//     if (input[left] != input[right]) {
+//       print('The word is not a palindrome');
+//     }
+//     left++;
+//     right--;
+//   }
+//   print('The word is palindrome');
+// }
+//   Palindrome('dsfg');
+
+  /* EXERCISE 7
+Let’s say you are given a list saved in a variable:
+
+a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]. 
+Write a Dart code that takes this list and makes a new list that has only the even elements of this list in it. 
+*/
+ //  List a = [1,4,9,16,25,36,49,64,81,100];
+ //  // print('Given List $a');
+ //  int i = 0;
+  
+ //  List b = [];
+ //  // for(var j in a){
+ //  //   if(++i %2 == 0){
+ //  //     b.add(j);
+ //  //   }
+ //  // }
+ //  // print('Even List : $b');
+ // // One liner
+ //  print([for (var j in a) if (++i % 2 == 0) j]);
+
+  /*EXERCISE 10
+ Ask the user for a number and determine whether the number is prime or not.  
+*/
+  // stdout.write('Please enter a number : ');
+  // int choosenNumber = int.parse(stdin.readLineSync()!);
+  // primeNumber(choosenNumber);
+//    stdout.write("Please give us a number: ");
+//   int chosenNumber = int.parse(stdin.readLineSync()!);
+//     checkPrime(chosenNumber);
+
+// }
+//   void checkPrime(int number) {
+//   // List comprehensions
+//   List<int> a = [
+//     for (var i = 1; i <= number; i++)
+//       if (number % i == 0) i
+//   ];
+
+//   // Check for prime
+//   a.length == 2
+//       ? print("The chosen number is a prime")
+//       : print("The chosen number is not a prime");
+
+  stdout.write('Please give us a number');
+  int number = int.parse(stdin.readLineSync()!);
+
+  
+}
+void checkPrime(int number){
+  List a = [
+    for(var i = 1;i<=number; i++){
+      if(i% number ==0);
     }
-  }
+  ];
+  // check Prime
+  
 }
