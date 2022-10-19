@@ -115,7 +115,6 @@ Ask the user for a string and print out whether this string is a palindrome or n
   //     ? print('Entered word is a palindrome')
   //     : print('Entered word is not a palindrome');
 
-  
 // Palindrome(String input){
 //   // stdout.write('Please give a word ? ');
 //   // String input = stdin.readLineSync()!;
@@ -139,19 +138,19 @@ Let’s say you are given a list saved in a variable:
 a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]. 
 Write a Dart code that takes this list and makes a new list that has only the even elements of this list in it. 
 */
- //  List a = [1,4,9,16,25,36,49,64,81,100];
- //  // print('Given List $a');
- //  int i = 0;
-  
- //  List b = [];
- //  // for(var j in a){
- //  //   if(++i %2 == 0){
- //  //     b.add(j);
- //  //   }
- //  // }
- //  // print('Even List : $b');
- // // One liner
- //  print([for (var j in a) if (++i % 2 == 0) j]);
+  //  List a = [1,4,9,16,25,36,49,64,81,100];
+  //  // print('Given List $a');
+  //  int i = 0;
+
+  //  List b = [];
+  //  // for(var j in a){
+  //  //   if(++i %2 == 0){
+  //  //     b.add(j);
+  //  //   }
+  //  // }
+  //  // print('Even List : $b');
+  // // One liner
+  //  print([for (var j in a) if (++i % 2 == 0) j]);
 
   /*EXERCISE 10
  Ask the user for a number and determine whether the number is prime or not.  
@@ -181,15 +180,13 @@ Write a Dart code that takes this list and makes a new list that has only the ev
 
   checkPrime(chosenNumber);
 }
-void checkPrime(int number){
+
+void checkPrime(int number) {
   List a = [
-    for(var i = 1;i<=number; i++){
-      if(i% number ==0)i 
-    }
+    for (var i = 1; i <= number; i++) {if (i % number == 0) i}
   ];
   // check Prime
   a.length == 2
-    ?print('The chosen number is a prime')
-    :print('The chosen number not is a prime');
-
+      ? print('The chosen number is a prime')
+      : print('The chosen number not is a prime');
 }
