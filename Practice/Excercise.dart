@@ -176,17 +176,20 @@ Write a Dart code that takes this list and makes a new list that has only the ev
 //       ? print("The chosen number is a prime")
 //       : print("The chosen number is not a prime");
 
-  stdout.write('Please give us a number');
-  int number = int.parse(stdin.readLineSync()!);
+  stdout.write('Please give us a number : ');
+  int chosenNumber = int.parse(stdin.readLineSync()!);
 
-  
+  checkPrime(chosenNumber);
 }
 void checkPrime(int number){
   List a = [
     for(var i = 1;i<=number; i++){
-      if(i% number ==0);
+      if(i% number ==0)i 
     }
   ];
   // check Prime
-  
+  a.length == 2
+    ?print('The chosen number is a prime')
+    :print('The chosen number not is a prime');
+
 }
