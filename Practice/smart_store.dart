@@ -10,7 +10,7 @@ Add item, Check avalability,Display item,Remove, Exit
   // this is our store Database like GODOWN
   List store = [];
   do {
-    print('****** WELCOME TO RELIANCE SMART *****');
+    print('        🛍️🛍️🛍️****** WELCOME TO RELIANCE SMART *****🏪🛒🏬');
     print(
         '\n1.Add items\n2.Check Avalabilty\n3.Display items\n4. Remove items\n5 Exit');
     print('Enter your choice :');
