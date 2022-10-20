@@ -189,6 +189,7 @@ Write a Dart code that takes this list and makes a new list that has only the ev
 //   a.length == 2
 //       ? print('The chosen number is a prime')
 //       : print('The chosen number not is a prime');
+
 /* Question by Israr bhai
 Our Store by user Input
 Add item, Check avalability,Display item,Remove, Exit
@@ -198,7 +199,7 @@ Add item, Check avalability,Display item,Remove, Exit
   do {
     print('****** WELCOME TO RELIANCE SMART *****');
     print(
-        '\n1.Add items\n2.Check Avalabilty\n3.Display items\n4. Remove items\n5 Exit');
+        '\n1.Add items\n2.Check Avalabilty\n3.Display items\n4. Remove items\n5 Exit\n6 Continue');
     print('Enter your choice :');
     userChoice = stdin.readLineSync()!;
     var itemName;
@@ -232,8 +233,11 @@ Add item, Check avalability,Display item,Remove, Exit
         print('$itemName is removed  from the store');
         break;
       case '5':
-        exit(0);
-
+        print('Thanks for Come to RELIANCE SMART!   Have a Nice day 😊😊😃');
+        continue;
+      case '6':
+        // print('Thanks for Come to RELIANCE SMART!   Have a Nice day 😊😊😃');
+        continue;
       default:
         print('Invalid Choice');
     }
