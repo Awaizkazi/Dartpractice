@@ -5,7 +5,9 @@ void main() {
 Our Store by user Input
 Add item, Check avalability,Display item,Remove, Exit
   */
+  // User ki choice lenge isme ye variable me
   String userChoice;
+  // this is our store Database like GODOWN
   List store = [];
   do {
     print('****** WELCOME TO RELIANCE SMART *****');
