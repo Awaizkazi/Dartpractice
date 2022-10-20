@@ -112,7 +112,7 @@ Ask the user for a string and print out whether this string is a palindrome or n
   // String reverseInput = input.split('').reversed.join('');
   // // Checking wheer entered number is palindrome or not
   // input == reverseInput
-  //     ? print('Entered word is a palindrome')
+  // ? print('Entered word is a palindrome')
   //     : print('Entered word is not a palindrome');
 
 // Palindrome(String input){
@@ -175,18 +175,67 @@ Write a Dart code that takes this list and makes a new list that has only the ev
 //       ? print("The chosen number is a prime")
 //       : print("The chosen number is not a prime");
 
-  stdout.write('Please give us a number : ');
-  int chosenNumber = int.parse(stdin.readLineSync()!);
+//   stdout.write('Please give us a number : ');
+//   int chosenNumber = int.parse(stdin.readLineSync()!);
 
-  checkPrime(chosenNumber);
-}
+//   checkPrime(chosenNumber);
+// }
 
-void checkPrime(int number) {
-  List a = [
-    for (var i = 1; i <= number; i++) {if (i % number == 0) i}
-  ];
-  // check Prime
-  a.length == 2
-      ? print('The chosen number is a prime')
-      : print('The chosen number not is a prime');
+// void checkPrime(int number) {
+//   List a = [
+//     for (var i = 1; i <= number; i++) {if (i % number == 0) i}
+//   ];
+//   // check Prime
+//   a.length == 2
+//       ? print('The chosen number is a prime')
+//       : print('The chosen number not is a prime');
+/* Question by Israr bhai
+Our Store by user Input
+Add item, Check avalability,Display item,Remove, Exit
+  */
+  String userChoice;
+  List store = [];
+  do {
+    print('****** WELCOME TO RELIANCE SMART *****');
+    print(
+        '\n1.Add items\n2.Check Avalabilty\n3.Display items\n4. Remove items\n5 Exit');
+    print('Enter your choice :');
+    userChoice = stdin.readLineSync()!;
+    var itemName;
+    switch (userChoice) {
+      // Adding the items into the list
+      case '1':
+        print('Enter item to Add : ');
+        itemName = stdin.readLineSync()!;
+        store.add(itemName);
+        print('$itemName is added into the store');
+        break;
+      // Check the item is  available or not
+      case '2':
+        print('Please enter item to Check is Availbe or not ? ');
+        itemName = stdin.readLineSync()!;
+        if (store.contains(itemName)) {
+          print('😊$itemName is Availale');
+        } else {
+          print('Sorry🙇🙏!$itemName is not available');
+        }
+        break;
+      // Display the items is in the store
+      case '3':
+        print('These all items are available  in is the store :$itemName');
+        break;
+      // Remove itmes from the list
+      case '4':
+        print('Enter item to Remove : ');
+        itemName = stdin.readLineSync()!;
+        store.remove(itemName);
+        print('$itemName is removed  from the store');
+        break;
+      case '5':
+        exit(0);
+
+      default:
+        print('Invalid Choice');
+    }
+  } while (userChoice != 5);
 }
